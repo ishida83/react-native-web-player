@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import ReactDOM from 'react-dom'
 import ReactNative, { AppRegistry } from 'react-native-web'
-import pureRender from 'pure-render-decorator'
 import VendorComponents from './VendorComponents'
 
 const APP_NAME = 'App'
@@ -49,8 +48,7 @@ const suffix = `
 
 const prefixLineCount = prefix.split('\n').length - 1
 
-@pureRender
-export default class extends Component {
+export default class extends PureComponent {
 
   static defaultProps = {
     code: '',

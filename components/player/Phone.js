@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
-import pureRender from 'pure-render-decorator'
+import React, { PureComponent } from 'react'
 
 import { prefix, prefixObject } from '../../utils/PrefixInlineStyles'
 import PHONES from '../../constants/Phones'
 
-@pureRender
-export default class extends Component {
+export default class extends PureComponent {
 
   static defaultProps = {
     width: 500,

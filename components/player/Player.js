@@ -1,12 +1,10 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import ReactDOM from 'react-dom'
-import pureRender from 'pure-render-decorator'
 
 import Phone from './Phone'
 import Sandbox from './Sandbox'
 
-@pureRender
-export default class extends Component {
+export default class extends PureComponent {
   render() {
     const {id, width, platform, scale, assetRoot} = this.props
 
